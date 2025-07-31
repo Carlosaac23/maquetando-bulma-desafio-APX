@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,13 +7,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
   </head>
   <body>
-    <section class="section">
-      <div class="container has-text-centered">
-        <h1 class="title">Hello World</h1>
-        <p class="subtitle">
-          My first website with
-          <strong class="has-text-primary">Bulma</strong>!
-        </p>
+    <header class="columns is-mobile m-2">
+      <div class="column">
+        <figure class="image is-48x48">
+          <img class="is-rounded" src="https://bulma.io/assets/images/placeholders/48x48.png" alt="" />
+        </figure>
+      </div>
+
+      <div class="column">
+        <button class="button is-primary is-medium is-fullwidth">Ingresar</button>
+      </div>
+    </header>
+
+    <section class="content section">
+      <h1>Escribenos</h1>
+      <p>Déjanos tu mensaje y te responderemos pronto.</p>
+      <div>
+        <div class="field">
+          <label class="label">Nombre</label>
+          <div class="control">
+            <input class="input" type="text" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Mensaje</label>
+          <div class="control">
+            <textarea class="textarea"></textarea>
+          </div>
+        </div>
+
+        <div>
+          <button class="button">Enviar</button>
+          <button class="button">Cancelar</button>
+        </div>
       </div>
     </section>
   </body>
